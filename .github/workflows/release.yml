@@ -1,12 +1,18 @@
 # Builds one ZIP per skill and publishes them as a GitHub release, so people
 # can upload a skill in the Claude or ChatGPT app without using git.
 # The newest ZIPs are always at releases/latest/download/<skill>.zip.
+# The release also holds the plugin ZIP to upload to OpenAI's plugin directory.
+# Anthropic's directory reads the plugin from this repository instead.
 name: Release skills
 
 on:
   push:
     branches: [main]
-    paths: ["skills/**", ".github/workflows/release.yml"]
+    paths:
+      - "skills/**"
+      - "assets/**"
+      - ".openai-plugin/**"
+      - ".github/workflows/release.yml"
   workflow_dispatch:
 
 permissions:
@@ -22,16 +28,27 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
-      - name: Build ZIPs
+      - name: Build skill ZIPs
+        working-directory: skills
         run: |
-          mkdir dist
-          cd skills
+          mkdir ../dist
           for skill_file in */SKILL.md; do
             skill="${skill_file%/SKILL.md}"
             # The README is for readers on GitHub; the apps only need the skill itself.
             zip -r -X "../dist/$skill.zip" "$skill" -x "$skill/README.md" "*.DS_Store"
           done
-          ls -l ../dist
+
+      - name: Build ChatGPT plugin ZIP
+        run: |
+          # OpenAI's directory needs a new version for every upload.
+          version="$(date -u +%Y.%-m.%-d)+${GITHUB_SHA::7}"
+          mkdir plugin
+          jq --arg version "$version" '{"$schema": ."$schema", name, version: $version} + .' \
+            .openai-plugin/plugin.json > plugin/plugin.json
+          cp -R skills assets LICENSE plugin/
+          rm -f plugin/skills/*/README.md
+          (cd plugin && zip -r -X ../dist/benvds-skills-chatgpt-plugin.zip . -x "*.DS_Store")
+          ls -l dist
 
       - name: Publish release
         env:
