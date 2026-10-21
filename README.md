@@ -1,9 +1,10 @@
 # Skills
 
-Agent skills I use every day, for Claude Code and other agents that read `SKILL.md` files. Each skill is small and easy to adapt. Copy what you like and change the rest.
+Agent skills I use every day, for Claude Code and other agents that read `SKILL.md` files. Copy what you like and change the rest.
 
 | Skill | What it does |
 |---|---|
+| [active-learning](skills/active-learning/README.md) | A learning coach built on learning research. You try first or learn from worked examples, prove what you learned with a teach-back, keep it with flashcards in your own words, and plan with your measured pace. Every choice is backed by sources. |
 | [plain-writing](skills/plain-writing/README.md) | Writes and edits clear reports, summaries, memos and other informative texts in Dutch or English. |
 
 Each skill has its own README with what it does, examples and the choices you may want to change.
