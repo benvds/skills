@@ -4,6 +4,7 @@ Agent skills I use every day, for Claude Code and other agents that read `SKILL.
 
 | Skill | What it does |
 |---|---|
+| [active-learning](skills/active-learning/README.md) | Coaches you through a learning track of a few hours to several months, with flashcards and a booklet with sources. |
 | [plain-writing](skills/plain-writing/README.md) | Writes and edits clear reports, summaries, memos and other informative texts in Dutch or English. |
 
 Each skill has its own README with what it does, examples and the choices you may want to change.
