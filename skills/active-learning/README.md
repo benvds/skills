@@ -1,17 +1,39 @@
 # active-learning
 
-Use it when you want to learn a subject, not just get an answer. It coaches you through a learning track that lasts from a few hours to several months: you build the material yourself, and the assistant asks, hints and checks.
+A learning coach built on learning research. You don't read explanations and hope they stick: you work on the material yourself, show that you can do it, and keep it with spaced repetition. Each step in the method follows a known finding, and [DESIGN.md](DESIGN.md) gives the source for each one.
+
+Use it when you want to learn a subject, not just get an answer. A track lasts from a few hours to several months.
 
 It doesn't activate for a single question or explanation, homework answers, flashcards from existing notes, or a course that someone else will teach.
 
-## What it does
+## The method
 
-- **Curriculum.** It starts from what you want to be able to do afterwards and the time you have. It does background research, tests what you already know, and drafts phases and parts. Together you check what fits in your time.
-- **Sessions.** For understanding, you try a problem first and get hints; the explanation builds on your attempt. For procedures and skills, or when the basis is missing, you start with a worked example and the help decreases. Every part ends with an independent task, a teach-back in your own words and a "what if" question.
-- **Cards.** Only after a part is learned, it makes flashcards whose answers come from your teach-back. It checks them for errors and lets you fix them yourself. Cards come in the format of Active Retrieval (my own app, not public) or as a text file that Anki and many other apps import.
-- **Booklet.** At the end of each phase, it writes a chapter with sources it has actually opened. At the end you can combine the chapters into one Markdown file and an EPUB.
-- **Status.** It keeps the curriculum, a log and the sources in three files, so you can continue in another conversation. Where they live depends on the platform: memory in the Claude apps, a Project in ChatGPT, or `.active-learning/` in your working folder in Claude Code.
-- **Short tracks.** With a budget of a few hours, it uses one phase with two to four parts, a budget in minutes and texts only at the end.
+**1. Start from what you want to be able to do.** The curriculum starts with concrete end tasks in the form "I can ...", not with a level such as "beginner". Planning back from the result is called backward design. A short test of your prior knowledge decides where you start. Questions asked before you learn something help you learn it, even when you answer them wrongly.
+
+**2. Get help that fits the goal.** In a meta-analysis of 53 studies, trying a problem before the explanation helped understanding and transfer (g = 0.36), but not procedural knowledge. So the coach chooses per part:
+- **Understanding, with enough basis:** you try first and get hints, not answers. The explanation then builds on your own attempt. In the same meta-analysis, the effect was larger when the explanation built on the learners' own solutions (g = 0.56 against 0.20).
+- **Procedures, skills or a missing basis:** you start with a worked example, then finish a partly worked task, then do one alone. The help disappears as soon as you can do it alone, because help that supports beginners holds back people who already know the material.
+
+**3. Prove that you can do it.** Feeling that you understand something is a poor measure, and performing with help is not the same as learning. A part counts as learned only when you have solved a task without hints, explained it in your own words, and answered a "what if" question with the right reason. Explaining it yourself had a medium effect in a meta-analysis (g = 0.55). Later, the part comes back as an application, to check that it stuck.
+
+**4. Make cards only after that, in your own words.** First understand, then memorise. The answers on your cards come from your own explanation; in experiments, self-made cards gave better learning than ready-made cards. The coach checks each answer for errors and missing conditions, and lets you correct it yourself. Your spaced repetition app (Active Retrieval or Anki) then plans the reviews. Three retrievals spread over three sessions gave 68% retention after a week, against 26% for three retrievals in one session.
+
+**5. Plan with your real pace.** People underestimate how long learning takes. The coach splits parts into steps, gives a range instead of a single number, and plans back from your end date. Reviewing gets its own place in your weekly budget. After three parts, your measured pace replaces the estimate, and the coach tells you early if the track no longer fits.
+
+**6. Get a booklet you can check.** At the end of each phase, the coach writes a chapter. Each claim in it rests on a source the coach actually opened, with the type of study, the effect and its limits. Your own explanations and mistakes sit in separate paragraphs, so the evidence and your experience stay apart. The background research is kept with the search log, so an expert can repeat it.
+
+## What this is not
+
+The research supports the elements one by one. That does not prove that this combination works best, and the skill as a whole has not been tested. DESIGN.md names this, and for each source it says whether the source was opened, confirmed or only known from a summary.
+
+## In practice
+
+- **Curriculum.** Intake, background research, a prior knowledge test, a first draft in phases and parts, and a reality check together: what fits, what almost fits, what is out of reach.
+- **Sessions.** One step per turn. Each session starts with one retrieval question about an earlier part or an open gap.
+- **Cards.** In the format of Active Retrieval (my own app, not public) or as a text file that Anki and many other apps import. Improved cards update the old ones without losing their review schedule.
+- **Booklet.** All chapters in one Markdown file, with an EPUB if you want one.
+- **Status.** The curriculum, a log and the sources live in three files, so you can continue in another conversation or on another platform. Where they live depends on the platform: memory in the Claude apps, a Project in ChatGPT, or `.active-learning/` in your working folder in Claude Code.
+- **Short tracks.** With a budget of a few hours, the coach uses one phase with two to four parts, a budget in minutes and texts only at the end.
 
 ## Example
 
@@ -40,7 +62,3 @@ This skill takes positions. Change them in [SKILL.md](SKILL.md) or the files in 
 - A chapter cites only sources the assistant actually opened. Without a source, a claim is left out or labelled as a design choice.
 - The skill saves its status without announcing it every time.
 - Cards for Active Retrieval keep the Dutch headings `# Vraag` and `# Antwoord`, because the app expects them.
-
-## Research
-
-[DESIGN.md](DESIGN.md) explains every choice, what research it rests on, and how each source was checked. It also says what the research does not prove: the elements are supported separately, but the skill as a whole has not been tested.
