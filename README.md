@@ -44,6 +44,22 @@ The apps don't update a skill by themselves. When a skill changes, download the 
 
 ## Install for Claude Code and other agents
 
+### As a Claude Code plugin
+
+This repo is also a plugin, `benvds-skills`, with both skills in it. Add the marketplace and install the plugin:
+
+```bash
+claude plugin marketplace add benvds/skills
+```
+
+```bash
+claude plugin install benvds-skills@benvds
+```
+
+Run `claude plugin update benvds-skills@benvds` to get a new version, or turn on auto-update for the `benvds` marketplace.
+
+### With skills-sync
+
 I sync these skills with [skills-sync](https://github.com/benvds/skills-sync). Add this repo to your `.skills.toml`:
 
 ```toml
@@ -63,6 +79,13 @@ skills-sync
 Add `--global` to install into `~/.claude/skills/` instead of the current project. Run the same command again to update.
 
 You can also copy a skill folder by hand into `~/.claude/skills/`. You then update it by hand too.
+
+## Plugin directories
+
+The plugin can be listed in the plugin directories of Claude and ChatGPT. It has a manifest for each:
+
+- [`.claude-plugin/plugin.json`](.claude-plugin/plugin.json) for Anthropic's directory. Submit this repo at [claude.ai/directory/manage](https://claude.ai/directory/manage) and leave the plugin path empty. The directory then picks up every commit to `main` by itself.
+- [`.openai-plugin/plugin.json`](.openai-plugin/plugin.json) for OpenAI's directory. Every release has a `benvds-skills-chatgpt-plugin.zip` built from it, with a new version number. Upload that file in OpenAI's plugin dashboard, once for the first submission and again for each update.
 
 ## Changes
 

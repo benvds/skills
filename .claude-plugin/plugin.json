@@ -1,0 +1,13 @@
+{
+  "name": "benvds-skills",
+  "displayName": "Learning and plain writing",
+  "description": "A learning coach built on learning research, and clear informative writing in Dutch or English.",
+  "author": {
+    "name": "benvds",
+    "url": "https://github.com/benvds"
+  },
+  "homepage": "https://github.com/benvds/skills",
+  "repository": "https://github.com/benvds/skills",
+  "license": "MIT",
+  "keywords": ["learning", "flashcards", "writing", "dutch", "plain-language"]
+}

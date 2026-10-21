@@ -1,0 +1,22 @@
+<!--
+  Icon "bot-message-square" from Lucide (lucide-static v1.61.0), https://lucide.dev
+
+  ISC License
+
+  Copyright (c) 2026 Lucide Icons and Contributors
+
+  Permission to use, copy, modify, and/or distribute this software for any
+  purpose with or without fee is hereby granted, provided that the above
+  copyright notice and this permission notice appear in all copies.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
+  <rect width="512" height="512" rx="112" fill="#2F5D50"/>
+  <g transform="translate(96 96) scale(13.333)" fill="none" stroke="#F4EFE6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M12 6V2H8"/>
+    <path d="M15 11v2"/>
+    <path d="M2 12h2"/>
+    <path d="M20 12h2"/>
+    <path d="M20 16a2 2 0 0 1-2 2H8.828a2 2 0 0 0-1.414.586l-2.202 2.202A.71.71 0 0 1 4 20.286V8a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2z"/>
+    <path d="M9 11v2"/>
+  </g>
+</svg>
