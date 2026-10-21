@@ -1,0 +1,45 @@
+# Builds one ZIP per skill and publishes them as a GitHub release, so people
+# can upload a skill in the Claude or ChatGPT app without using git.
+# The newest ZIPs are always at releases/latest/download/<skill>.zip.
+name: Release skills
+
+on:
+  push:
+    branches: [main]
+    paths: ["skills/**", ".github/workflows/release.yml"]
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: release
+  cancel-in-progress: false
+
+jobs:
+  release:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Build ZIPs
+        run: |
+          mkdir dist
+          cd skills
+          for skill_file in */SKILL.md; do
+            skill="${skill_file%/SKILL.md}"
+            # The README is for readers on GitHub; the apps only need the skill itself.
+            zip -r -X "../dist/$skill.zip" "$skill" -x "$skill/README.md" "*.DS_Store"
+          done
+          ls -l ../dist
+
+      - name: Publish release
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          tag="$(date -u +%Y-%m-%d)-${GITHUB_SHA::7}"
+          gh release create "$tag" dist/*.zip \
+            --target "$GITHUB_SHA" \
+            --title "Skills $(date -u +%Y-%m-%d)" \
+            --notes "ZIP files to upload in the Claude or ChatGPT app. See the [README](https://github.com/${GITHUB_REPOSITORY}#install-in-the-claude-or-chatgpt-app) for how, and the [changelog](https://github.com/${GITHUB_REPOSITORY}/blob/${GITHUB_SHA}/CHANGELOG.md) for what changed." \
+            --latest
