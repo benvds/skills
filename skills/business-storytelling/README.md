@@ -12,6 +12,7 @@ It doesn't activate for neutral informative texts such as reports and minutes (u
 - It turns data into an insight with context, a human scale and a comparison.
 - It never invents facts. Missing numbers, customers or quotes become visible placeholders, listed after the result.
 - It writes in the language of your audience.
+- It writes the sentences with [plain-writing](../plain-writing/README.md) by default: short, concrete and active, without banned words. The story devices stay, such as the hook and the tension. It skips plain-writing if that skill isn't installed or if you ask for another style.
 
 ## Before and after
 
@@ -30,7 +31,7 @@ This skill takes positions. Change them in [SKILL.md](SKILL.md) if they don't su
 
 ## Works well with
 
-- [plain-writing](../plain-writing/README.md) for informative texts around the story, such as a memo with the background.
+- [plain-writing](../plain-writing/README.md), which it uses for the sentences. Install it too.
 - [ia-presenter](../ia-presenter/README.md) to turn the story into an iA Presenter file.
 
 ## Credits

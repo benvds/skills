@@ -133,6 +133,19 @@ When the result is a presentation, put the chosen framework into this structure:
 4. **Call to action:** one specific ask.
 5. **Memorable close:** circle back to the opening, or end with the vision.
 
+## Writing the text
+
+This skill decides the story: the framework, the order, the opening, the stakes and the ask. For the sentences and the words, use the `plain-writing` skill by default. Read it before you write, including its language file, and apply its rules for sentences, concision, word choice and the final check.
+
+Where the two differ, this skill wins:
+
+- **Questions:** the discovery above replaces the question in `plain-writing`. Don't ask again.
+- **Story devices:** keep the hook, the tension, the contrast between what is and what could be, and comparisons that make a number concrete. Still cut clichés, empty promises and corporate speak.
+- **Sources:** in a written piece, such as a case study or a proposal, follow `plain-writing` and link sources next to the claims. In a script for a talk, don't put links in the spoken text. List the sources after the result.
+- **Delivery:** the format and the notes after the result come from the Output section below, not from `plain-writing`.
+
+Skip `plain-writing` if it is not available, or if the user asks for another style, such as their own voice, a more rhetorical keynote or a fixed house style. Then apply the story elements and common mistakes in this skill, and write short, concrete sentences in active voice.
+
 ## Output
 
 Give the result in the format the user asked for: an outline, a script, a document or slide texts. Write it in the language of the audience. After the result, give in a few lines:
