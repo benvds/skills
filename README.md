@@ -5,6 +5,9 @@ Agent skills I use every day, for the Claude and ChatGPT apps, Claude Code and o
 | Skill | What it does |
 |---|---|
 | [active-learning](skills/active-learning/README.md) | A learning coach built on learning research. You try first or learn from worked examples, prove what you learned with a teach-back, keep it with flashcards in your own words, and plan with your measured pace. Every choice is backed by sources. |
+| [business-storytelling](skills/business-storytelling/README.md) | Turns business content into a persuasive story for a pitch, keynote, proposal or case study, with a proven framework chosen for your audience. Never invents facts. |
+| [ia-presenter](skills/ia-presenter/README.md) | Writes presentations for iA Presenter as one Markdown file: your script as speaker notes, and on the slides only what the audience must see. |
+| [mobile-pdf](skills/mobile-pdf/README.md) | Turns Markdown or another document into a narrow PDF with large text, for reading on your phone. |
 | [plain-writing](skills/plain-writing/README.md) | Writes and edits clear reports, summaries, memos and other informative texts in Dutch or English. |
 
 Each skill has its own README with what it does, examples and the choices you may want to change.
@@ -14,6 +17,9 @@ Each skill has its own README with what it does, examples and the choices you ma
 You don't need git or a terminal for this. Download the ZIP file of the skill you want:
 
 - [active-learning.zip](https://github.com/benvds/skills/releases/latest/download/active-learning.zip)
+- [business-storytelling.zip](https://github.com/benvds/skills/releases/latest/download/business-storytelling.zip)
+- [ia-presenter.zip](https://github.com/benvds/skills/releases/latest/download/ia-presenter.zip)
+- [mobile-pdf.zip](https://github.com/benvds/skills/releases/latest/download/mobile-pdf.zip)
 - [plain-writing.zip](https://github.com/benvds/skills/releases/latest/download/plain-writing.zip)
 
 Don't unpack the file. Upload it as it is.
