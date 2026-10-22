@@ -7,6 +7,7 @@ Every commit to `main` reaches users on their next sync, so each entry is dated 
 ### Added
 
 - `business-storytelling`: turn business content into a persuasive story for a pitch, keynote, proposal or case study, with SCQA, Monroe's Motivated Sequence, Duarte's Sparkline, the Hero's Journey and the SUCCESs checklist. Missing facts become visible placeholders instead of invented numbers. Uses `plain-writing` for the sentences when it is installed.
+- `design-taste`: design judgement for pages, app screens, slides and documents. Names the default a model would ship, chooses the least typical direction that still fits the subject, and critiques the rendered result. Based on a meta-analysis of Impeccable, Taste Skill and research on aesthetic judgement; Markdown only, no scripts.
 - `ia-presenter`: write presentations for iA Presenter as one Markdown file, with the script as speaker notes and only what the audience must see on the slides.
 - `mobile-pdf`: turn Markdown or another document into a narrow PDF with large text, for reading on a phone.
 
