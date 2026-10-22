@@ -6,6 +6,7 @@ Agent skills I use every day, for the Claude and ChatGPT apps, Claude Code and o
 |---|---|
 | [active-learning](skills/active-learning/README.md) | A learning coach built on learning research. You try first or learn from worked examples, prove what you learned with a teach-back, keep it with flashcards in your own words, and plan with your measured pace. Every choice is backed by sources. |
 | [business-storytelling](skills/business-storytelling/README.md) | Turns business content into a persuasive story for a pitch, keynote, proposal or case study, with a proven framework chosen for your audience. Never invents facts. |
+| [design-taste](skills/design-taste/README.md) | Design judgement for pages, app screens, slides and documents. Notices the default a model would ship, chooses a direction that fits your subject, and critiques the rendered result as a stranger would. |
 | [ia-presenter](skills/ia-presenter/README.md) | Writes presentations for iA Presenter as one Markdown file: your script as speaker notes, and on the slides only what the audience must see. |
 | [mobile-pdf](skills/mobile-pdf/README.md) | Turns Markdown or another document into a narrow PDF with large text, for reading on your phone. |
 | [plain-writing](skills/plain-writing/README.md) | Writes and edits clear reports, summaries, memos and other informative texts in Dutch or English. |
@@ -18,6 +19,7 @@ You don't need git or a terminal for this. Download the ZIP file of the skill yo
 
 - [active-learning.zip](https://github.com/benvds/skills/releases/latest/download/active-learning.zip)
 - [business-storytelling.zip](https://github.com/benvds/skills/releases/latest/download/business-storytelling.zip)
+- [design-taste.zip](https://github.com/benvds/skills/releases/latest/download/design-taste.zip)
 - [ia-presenter.zip](https://github.com/benvds/skills/releases/latest/download/ia-presenter.zip)
 - [mobile-pdf.zip](https://github.com/benvds/skills/releases/latest/download/mobile-pdf.zip)
 - [plain-writing.zip](https://github.com/benvds/skills/releases/latest/download/plain-writing.zip)
