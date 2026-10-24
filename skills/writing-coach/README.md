@@ -6,7 +6,7 @@ It doesn't activate for texts you want written entirely for you (use [plain-writ
 
 ## The method
 
-**1. Budget first.** The coach asks for a budget in words, time, both or none, before anything else. A word budget sets how many sections and paragraphs fit, and gives every paragraph a word target. A time budget gets a reality check: the work split into steps, a range per paragraph, planned back from your deadline, and three lists of what fits, almost fits and is out of reach. After three paragraphs, your measured pace replaces the starting guess.
+**1. Budget first.** The coach asks for a budget in words, time, both or none, before anything else. A word budget sets how many sections and paragraphs fit, and gives every paragraph a word target. A time budget gets a reality check: the work split into steps, a range per paragraph that depends on how often you write texts like this, planned back from your deadline, and three lists of what fits, almost fits and is out of reach. After three paragraphs, your measured pace replaces the starting guess.
 
 **2. Your point before any source.** You write the point in one sentence, or the main question of your report, and list in keywords what you already know and think. That goes on paper before research can steer it.
 
@@ -54,6 +54,7 @@ This skill takes positions. Change them in [SKILL.md](SKILL.md) or the files in 
 - At most three points of feedback per round.
 - The strongest objection is always part of an opinion piece.
 - The budget is asked before anything else, and a paragraph is about 100 to 150 words.
+- The starting guess for a paragraph ranges from 10 to 30 minutes for professional writers to 30 to 75 minutes for people who rarely write such texts. Research only bounds these numbers; the drafting rates come from writers' own estimates.
 - A source is cited only when it was opened, and the card says what was opened.
 - In Dutch, the coach says *je*, not *u*.
 

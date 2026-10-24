@@ -6,7 +6,7 @@ Every commit to `main` reaches users on their next sync, so each entry is dated 
 
 ### Added
 
-- `writing-coach`: a writing coach for reports, informative articles and opinion pieces you write yourself. Asks for a budget in words or time first, which sets the size of the outline. Guides you from your point and sub-questions to an outline and every paragraph, with feedback loops you end yourself. Researches in the background with source cards you can check, and ends with a polish by `plain-writing` and a content check of your positions and conclusions.
+- `writing-coach`: a writing coach for reports, informative articles and opinion pieces you write yourself. Asks for a budget in words or time first, which sets the size of the outline. The time per paragraph starts from your writing experience, based on research on writing speed, and switches to your measured pace after three paragraphs. Guides you from your point and sub-questions to an outline and every paragraph, with feedback loops you end yourself. Researches in the background with source cards you can check, and ends with a polish by `plain-writing` and a content check of your positions and conclusions.
 
 ### Changed
 

@@ -11,7 +11,7 @@ Ask before any other work starts, as one of the intake questions:
 - **Both:** a length and the time to write it.
 - **No budget:** the length follows from the channel, and there is no planning.
 
-If the user already named a budget, such as "max 800 words" or "I have three evenings", ask only what is still open. For a word budget, ask whether it is a hard limit (a magazine, an assignment) or a target. For a time budget, ask how many sessions that is and how long each one is.
+If the user already named a budget, such as "max 800 words" or "I have three evenings", ask only what is still open. For a word budget, ask whether it is a hard limit (a magazine, an assignment) or a target. For a time budget, ask how many sessions that is and how long each one is, and how often the user writes texts like this (see **A range from experience**).
 
 ## Word budget
 
@@ -28,10 +28,22 @@ At the polish, report the total against the budget. If a hard limit is exceeded,
 
 ## Time budget
 
-No research says how long a paragraph of an article takes to write. What is well researched is that people underestimate how long tasks take, and what helps against it: splitting the work, a range instead of one number, planning back from the deadline, and measuring instead of remembering. The method follows that (see choice 12 in `DESIGN.md`).
+No study found says how long a paragraph of an article takes to write at a given skill level. What is well researched is that people underestimate how long tasks take, and what helps against it: splitting the work, a range instead of one number, planning back from the deadline, and measuring instead of remembering. The method follows that (see choice 12 in `DESIGN.md`).
 
 1. **Split.** Estimate the steps one by one: point and sub-questions, the outline loop, each paragraph with its feedback rounds, the reverse outline, the polish and content check, and the reader test. Research runs in the background; count only the time to read the summaries.
-2. **A range.** Ask the user how long a paragraph usually takes them. If they don't know, plan with 20 to 45 minutes per paragraph, including two feedback rounds, and say that this is a starting guess, not a measurement.
+2. **A range from experience.** Ask how often the user writes texts like this, and choose the row in the table below. If the user knows how long a page usually takes them, use the higher of their number and the table: people tend to remember their writing as faster than it was. Say that this is a starting guess, not a measurement.
+
+| Writing experience | Drafting only | Per paragraph of about 125 words, with two feedback rounds |
+| --- | --- | --- |
+| Rarely writes texts like this, or writes in a second language | 300 to 500 words per hour | 30 to 75 min |
+| Writes texts like this regularly for work | 500 to 800 words per hour | 20 to 45 min |
+| Writes professionally, such as a journalist or a researcher who publishes often | 800 to 1,200 words per hour | 10 to 30 min |
+
+The table rests on three things. Adults composing short texts at a keyboard type about 19 words per minute, so drafting alone is fast. Writers with more experience produce more words per minute. Students needed 9 to 15 hours for an essay of 1,500 words, including reading and planning, or 100 to 170 finished words per hour. The drafting rates per row are practice estimates from writers, not research. The per-paragraph time is the drafting time for 125 words, multiplied by two at the low end and three at the high end, for two rounds of feedback and refining. That factor is a design choice. The slowest row matches the student essays at its high end. See choice 12 in `DESIGN.md`.
+
+Adjust the row for the text:
+- **Many sources in a paragraph:** use the high end, or the next slower row. Writers' rough estimates put drafting with research at about half the speed; this is not confirmed by research.
+- **A subject the user knows well:** use the low end. Practice rule.
 3. **Plan back from the deadline.** What must be done in the last session, and in the one before? Planning from the end back to now gives more realistic estimates than planning forwards.
 4. **Reality check, together.** Show it:
 

@@ -46,7 +46,7 @@ aliases: [async decisions article]
 ## Budget
 - [stated] Words: 1,200, target (not a hard limit); opening ~120, close ~120, body 6 to 9 paragraphs
 - [stated] Time: 6 hours until 2026-11-10, in 4 sessions of 90 min; fixed steps 2 hours
-- [stated] Pace: starting guess 20 to 45 min per paragraph; measured: not yet (after 3 paragraphs)
+- [stated] Pace: starting guess 20 to 45 min per paragraph (writes regularly for work); measured: not yet (after 3 paragraphs)
 
 ## Point
 - [stated] Point: Teams make better decisions when everyone writes a page first and meets after
