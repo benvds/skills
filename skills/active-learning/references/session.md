@@ -111,6 +111,8 @@ This applies to every feedback turn, including teach-back and "what if".
 
 ## Teach-back and "what if" (all routes)
 
+In route A, if the user needed a lot of help, this step comes only after a successful independent task (see **Independent**).
+
 1. **Teach-back.** "Explain [part] as if you were telling a colleague: what does it do, why does it work, when do you not use it?" Point out vague or incorrect pieces, with the reason (see **Giving feedback**). Let the user rephrase those pieces.
 2. **"What if".** Change one element of the problem and ask whether the part still works, and why. Put "and why" in the question yourself. You cannot count a reason you did not ask for as a gap.
 
@@ -120,11 +122,11 @@ This applies to every feedback turn, including teach-back and "what if".
 
 Performing with help is not the same as being able to do it alone. So:
 - **Route A, solved at hint level 1 or 2:** the original solution counts as independent.
-- **Route A, solved at level 3 or lower, or after the solution:** after the teach-back, give one new task of the same kind, without hints. Only when that succeeds does the part count as independent.
+- **Route A, solved at level 3 or lower, or after the solution:** right after the problem and its explanation, before the teach-back, give one new task of the same kind, without hints. Only when that succeeds does the part count as independent.
 - **Route B:** step 3 (the independent task) is this test.
 - **Skill:** the independent task is a performance task: actually doing or making something, not talking about it.
 
-If the independent task fails: give feedback, note the gap, and leave the part on `in-progress`. The next session starts with a new independent task.
+If the independent task fails: give feedback, note the gap, and leave the part on `in-progress`. The next session starts with a new independent task. In route A, do the teach-back only after an independent task has succeeded.
 
 ## Social learning goals
 
@@ -136,6 +138,8 @@ A part is learned when:
 - the user can do it independently (see **Independent**);
 - the teach-back no longer has a large gap;
 - the "what if" question is answered correctly, with the right reason.
+
+**Never "learned"** while a required independent task is missing or has failed. That also holds when the teach-back and "what if" went well.
 
 **Fast route:** the user already knows the part. Do the teach-back and "what if". For a procedure or skill, add one independent task or performance task.
 
