@@ -1,6 +1,6 @@
 ---
 name: plain-writing
-description: Write and edit clear business and informative texts in Dutch or English, such as reports, summaries, memos, minutes, status updates, advice notes, internal emails and explanations for non-experts. Use when the user wants a text that other people will read, or asks to rewrite, shorten or simplify one. Examples are "write a report on", "make this clearer", "rewrite this for management", "schrijf een verslag", "maak dit leesbaarder", "herschrijf dit in begrijpelijke taal" and "vat dit samen voor het team". Not for marketing or sales copy, fiction, social media posts, code comments, commit messages, technical API documentation, literal translation, spelling-only checks or quick answers in chat.
+description: Write and edit clear business and informative texts in Dutch or English, such as reports, summaries, memos, minutes, status updates, advice notes, internal emails and explanations for non-experts. Use when the user wants a text that other people will read, or asks to rewrite, shorten or simplify one. Examples are "write a report on", "make this clearer", "rewrite this for management", "schrijf een verslag", "maak dit leesbaarder", "herschrijf dit in begrijpelijke taal" and "vat dit samen voor het team". Not for marketing or sales copy, fiction, social media posts, code comments, commit messages, technical API documentation, literal translation, spelling-only checks, quick answers in chat, or coaching the user through a text they write themselves (use writing-coach).
 ---
 
 # Plain writing

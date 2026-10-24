@@ -2,6 +2,16 @@
 
 Every commit to `main` reaches users on their next sync, so each entry is dated rather than versioned.
 
+## 2026-10-24
+
+### Added
+
+- `writing-coach`: a writing coach for reports, informative articles and opinion pieces you write yourself. Asks for a budget in words or time first, which sets the size of the outline. Guides you from your point and sub-questions to an outline and every paragraph, with feedback loops you end yourself. Researches in the background with source cards you can check, and ends with a polish by `plain-writing` and a content check of your positions and conclusions.
+
+### Changed
+
+- `plain-writing`: the description now sends coaching on a text you write yourself to `writing-coach`.
+
 ## 2026-10-22
 
 ### Added
