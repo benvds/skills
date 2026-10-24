@@ -68,11 +68,11 @@ Then choose the **route** based on the learning goal type and prior knowledge:
 
 If the user cannot make a start in route A, switch to route B. Let the help depend on what the user shows, not on the number of hints.
 
-Then, for every route: **teach-back** in their own words and one **"what if"** variation.
+**Independent.** In route A, if the user solved it with a lot of help (hint level 3 or lower, or after seeing the solution), give one new task without hints right after the problem, before the teach-back. Only when that succeeds does the part count as independent. If it fails, give feedback, note the gap, and keep the part `in-progress`.
 
-**Independent.** If the user solved it with a lot of help (hint level 3 or lower, or after seeing the solution), give one new task without hints. Only when that succeeds does the part count as independent.
+Then, for every route: **teach-back** in their own words and one **"what if"** variation. In route A, the teach-back comes only after an independent task has succeeded.
 
-**Learned** means: succeeded independently, teach-back without a large gap, "what if" answered correctly with the right reason. That is the first learning phase. Whether it sticks, you test later with an application (during retrieval or in a phase end task). When it is learned, ask: "Ready for cards?"
+**Learned** means: succeeded independently, teach-back without a large gap, "what if" answered correctly with the right reason. Never "learned" while a required independent task is missing or has failed. That is the first learning phase. Whether it sticks, you test later with an application (during retrieval or in a phase end task). When it is learned, ask: "Ready for cards?"
 
 If there is still a gap, the part stays `in-progress`. Write the gap in the status file. The next session starts there.
 
