@@ -2,7 +2,7 @@
 
 This document explains why the skill works the way it does. For each choice, it states what was decided, why, what it rests on, and which alternative was rejected. Source references appear as [S1], [S2] and so on. The source list at the bottom states for each source how it was checked.
 
-Written 17 October 2026. Revised the same day after an external review of the content and after first use; see "Changes after review" and "Changes after first use" at the bottom. Prepared for publication on 21 October 2026; see "Changes for publication".
+Written 17 October 2026. Revised the same day after an external review of the content and after first use; see "Changes after review" and "Changes after first use" at the bottom. Prepared for publication on 21 October 2026; see "Changes for publication". Revised on 25 October 2026 after a second track; see "Changes after second use".
 
 ## Goal
 
@@ -30,17 +30,19 @@ A working folder is only available on one computer. That is why memory is prefer
 
 ## Choice 3: Help matched to learning goal and prior knowledge
 
-**Decision.** There are two routes. For understanding with enough prior knowledge: try first (route A: black box, problem, hint ladder, explanation built on the attempt). For procedures, skills or missing prior knowledge: a worked example first (route B: example, partly completed task, independent task). If the user cannot make a start in route A, the coach switches to route B. The amount of help follows from what the user shows, not from a fixed number of hints. Each part gets a learning goal type in the curriculum: understanding, procedure, skill or social.
+**Decision.** Every part starts with a black box. Then there are two routes. For understanding with enough prior knowledge: try first (route A: problem, hint ladder, explanation built on the attempt, the user explains their own error). For procedures, skills or missing prior knowledge: a worked example first (route B: example, partly completed task, independent task). If the user cannot make a start in route A, the coach switches to route B. The amount of help follows from what the user shows, not from a fixed number of hints. Each part gets a learning goal type in the curriculum: understanding, procedure, skill or social.
 
 **Why and rationale.**
 - **Trying first works, but not always.** A meta-analysis of 53 studies found a medium advantage for problem solving before instruction for understanding and transfer (g = 0.36), but no difference for procedural knowledge (g = -0.03). Instruction first came out better for young learners and for general skills [S1]. "Struggle first" is therefore not a rule for everything. That is why the route depends on the learning goal type.
 - **The explanation after the attempt is essential.** In the same meta-analysis, the effects were larger when the instruction built on the learners' own solutions (g = 0.56 against 0.20) and when it took the form of a dialogue instead of a lecture [S1]. That is why the explanation in route A builds on the user's attempt, in conversation.
 - **Example first when the basis is missing.** Worked examples gave a medium effect (g = 0.48) in a meta-analysis on mathematics [S28]. Guidance that helps beginners can hold back people with more prior knowledge [S7]. That is why route B reduces the help as soon as the user can do it alone.
-- **Black box.** There is no direct research on this form. It is designed to make route A possible: enough overview to try the problem, without giving away the solution.
-- **Hints instead of answers.** Students who used an AI that gave answers then did worse without AI than students without AI. An AI tutor that gave hints largely prevented this [S2]. A recent randomised experiment showed that an AI tutor designed according to educational principles gave more learning gain in less time than active learning in class [S3]. The design of the tutor matters, not just the use of AI.
+- **Black box before both routes.** There is no direct research on this form. It gives enough overview to try a problem in route A, or to see what a worked example in route B is for, without giving away the solution. Earlier versions used it only in route A. It is also level 1 of the depth pyramid (choice 15).
+- **Hints instead of answers.** In a field experiment with nearly a thousand high school students, those who practised with a plain GPT-4 chat then scored 17% lower on an exam without AI than students who never had AI. A tutor whose prompt held correct solutions, teacher input on common mistakes and the instruction to give hints instead of answers prevented that loss: its students scored the same as the control group, so there was no gain either [S2]. The tutor combined several safeguards, so the study does not show which one made the difference. A randomised crossover experiment with 194 physics students found more learning in less time with an AI tutor designed according to educational principles than with active learning in class, measured right after each of two lessons [S3]. A randomised trial with 2,379 university students found the opposite for access to an AI tutor built into the course: final grades 0.37 standard deviations lower, and less participation. That working paper is not peer-reviewed [S34]. The design and context of the tutor matter; access to AI alone guarantees nothing.
 - **Setting it aside helps.** Leaving a problem for a while gave a small to medium advantage (d = 0.29) [S4]. That is why a break is a full option when the user is frustrated.
 - **Don't gloss over frustration.** Getting stuck can be part of learning, but it is no proof that learning is working. It can also mean that the task is too hard or the basis is missing. That is why the coach says something like "Getting stuck can be part of learning. Let's see whether you can move on or need different help," and offers to switch to a worked example.
-- **Explaining it yourself.** Prompting self-explanation gave a medium learning effect (g = 0.55) [S5]. That is why there is a teach-back.
+- **Explaining it to yourself.** Prompting self-explanation while studying or solving problems gave a medium learning effect (g = 0.55, 95% CI 0.45 to 0.65; 69 effect sizes, 5,917 participants) [S5]. Self-explanation means making inferences for yourself about why a step follows or how ideas connect. The meta-analysis explicitly did not count explaining to another person as self-explanation. That is why route B asks the user to explain one step of the worked example, and why the user explains their own error after the explanation in route A. The teach-back, an explanation to an imagined colleague after learning, is not what this research tested. It is a design choice: a check of understanding and the source of the card answers (choices 4 and 6).
+- **Explaining your own error, with a targeted question.** In a physics experiment, scaffolded prompts to explain one's own errors improved error correction and near transfer, but not far transfer. Standard prompts did not reliably help [S36]. That is why the coach asks a targeted question about the error, not a general "explain it".
+- **Interest and choice.** In a meta-analysis in higher education, perceived autonomy support (taking the learner's perspective, offering choices, limiting pressure) correlated with intrinsic motivation (r = .41) and less with achievement (r = .18). These are correlations, and intervention studies were excluded [S37]. That is why the coach connects tasks to the user's goal, shows interest in the reasoning and offers real choices. This is a design choice, not a proven effect for an AI coach.
 
 **Rejected.** An exam mode. It may come back later as a separate variant.
 
@@ -53,6 +55,10 @@ A working folder is only available on one computer. That is why memory is prefer
 **Why.** The feeling "I get it" is a poor measure. Students in an active class learned more than students in a passive class, but rated their own learning gain lower [S6]. A test on explaining and applying says more.
 
 Performing during practice is also not a reliable measure of learning: what succeeds with help may not succeed independently later, and learners often mistake performance during practice for lasting learning [S29]. That is why there is an independent task after a lot of help, and a later application. A second review planner is not needed for this: retrieval and the phase end task cover it.
+
+**Near and far transfer apart.** In two experiments on critical thinking, instruction and practice gave gains on near transfer and small gains on far transfer. Support for recognising the task or recalling the knowledge did not help, which points to problems in applying the knowledge to a new task [S35]. That is why a task similar to the practice counts for "learned", while a task that differs further is a separate diagnosis. If it fails, the coach records whether the problem was recognising the approach, having the knowledge ready or applying it, and the part stays learned.
+
+**Whose question counts.** A question, checklist or list of thinking steps that the coach gives counts as help, also when it holds no content. A learned question or strategy that the user uses on their own counts as independent. Otherwise a coach could count prompted reasoning as independent work.
 
 The fast route prevents you from going through parts you already master in full again. A lot of guidance helps beginners, but holds back people who already know the material [S7].
 
@@ -97,7 +103,7 @@ The fast route prevents you from going through parts you already master in full 
 
 ## Choice 9: The curriculum
 
-**Decision.** Intake with end tasks and time, background research, prior knowledge test, first draft with a learning goal type per part, a reality check together, a short assessment list per end task, and a next steps section. Phase end tasks also combine parts from earlier phases, without saying which are needed.
+**Decision.** Intake with a goal, end tasks and time, background research, prior knowledge test, scope and depth per topic (see choice 15), first draft with a learning goal type and a target level per part, a reality check together, a short assessment list per end task, and a next steps section. Phase end tasks also combine parts from earlier phases, without saying which are needed.
 
 **Why and rationale.**
 - **Start at the end.** First decide what you want to be able to do, then how you show it, and only then the lessons. This is called backward design [S15]. A level label such as "beginner" says nothing about what you want to achieve.
@@ -161,6 +167,26 @@ The fast route prevents you from going through parts you already master in full 
 
 **Rejected.** Refusing short tracks. Then the skill would not help with a common learning question, while its core works there too.
 
+## Choice 15: A depth pyramid per topic
+
+**Decision.** Before any parts are made, coach and user set the scope together: the goal, what is in the track and what is out, and a target level for each topic on a pyramid of four levels:
+1. **Overview:** what it does, what you use it for, when not
+2. **Use:** apply it correctly in a real task
+3. **Inside:** why it works, so you can predict, find errors and adapt
+4. **Build:** derive or rebuild it yourself, or design a variant
+
+Each topic gets the lowest level at which the end tasks succeed. Every level deeper needs a concrete reason, which the coach tests with the question "what goes wrong in your end task if you can only do the previous level?" Level 4 is never the default, but the coach always offers it for one or two topics. A part is done when it reaches its target level. The route, the teach-back, the "what if" question, the cards and the chapter follow that level. Level 1 topics get no session of their own.
+
+**Why.**
+- **Time goes to the goal.** In a second track, some concepts took a long time before they counted as learned, while the user could already use them. The bar for "learned" was the same for every part: explain why it works. For a part that the end task only needs at level 2, that costs sessions without bringing the goal closer. A target level per part makes the bar explicit, and lets the coach stop as soon as it is reached.
+- **Backward design includes depth.** Starting from what you want to be able to do and how you will show it [S15] also means deciding how deep you must go for that. A level per topic makes that decision visible, so the user can disagree with it.
+- **Practice source.** Colin Galen describes a "black box method": first learn to use a complex tool or concept for its purpose, before you know how it works inside [S32]. In a later video, he describes deepening in layers: understand the purpose, look at details in their context, practise, explain and try variations, and try to work things out yourself. He calls that slow, and suitable mainly for hard, important concepts [S33]. Both are practice advice, not comparative experiments. The four levels are this skill's translation: level 1 is the black box, levels 3 and 4 are his deepening.
+- **Deeper by choice.** Some topics the user wants to master deeply, to build, teach or research it. Level 4 makes that possible. Because it costs the most time, it is a choice the user makes knowingly, counted in the reality check.
+
+**What the research does not show.** No direct study was found of Galen's method or of a depth pyramid like this one. The research note of a learning track (24 October 2026) reached the same conclusion. The four levels, their order and the test question are design choices. Galen's claims about remembering things forever are not adopted.
+
+**Rejected.** One depth for all parts. That was the old bar, and it costs time without bringing the goal closer. Also rejected: leaving depth to the coach's judgement during the sessions. Then it stays implicit, and the user cannot choose.
+
 ## Known limitations
 
 - **The assistant judges your teach-back.** That judgement can be wrong. That is why you confirm every "learned".
@@ -169,7 +195,8 @@ The fast route prevents you from going through parts you already master in full 
 - **Working at the same time.** If you work on the same track on two devices at once in Claude, the assistant merges changes when there is a version conflict. Check the status file if something looks odd.
 - **No `cloze` cards.** Only `basic`.
 - **Without code execution, no zip or EPUB.** Cards then come as separate code blocks.
-- **Rules of thumb.** The shape of the curriculum (two to four phases, three to six parts; one phase with two to four parts in a short track), the signal at ten cards and the limit at hint level 3 for an independent task are design choices, not derived from research.
+- **Rules of thumb.** The shape of the curriculum (two to four phases, three to six parts; one phase with two to four parts in a short track), the signal at ten cards, the limit at hint level 3 for an independent task and the four depth levels are design choices, not derived from research.
+- **The coach proposes the depth.** The proposal can be too shallow or too deep. That is why the user confirms the scope, and why a level can change during the track.
 - **Audience.** The skill assumes an adult learner who masters the language of instruction well. Age, language proficiency and extra support needs are not explicitly weighed. Children or beginning language learners need an adapted version, partly because instruction first came out better for young learners [S1].
 - **Social learning goals.** The skill can give a practice task in a real situation and debrief it, but cannot practise with real people itself.
 
@@ -209,6 +236,20 @@ For publication, the skill was separated from one personal setup:
 - **Gender-neutral.** The instructions refer to the user as "the user" or "they".
 - **Short track.** A track can last from a few hours to several months (choice 14).
 
+## Changes after second use
+
+A second track, in which the user also reviewed the skill itself, led to these changes in `references/curriculum.md` (new step 4 "Scope and depth"), `references/session.md` (new section "Depth"), `SKILL.md`, `references/cards.md`, `references/storage.md` and `references/texts.md`:
+- **Goal in the intake.** The intake now first asks why the user wants to learn the subject. The introduction already needed this, but the intake did not ask for it.
+- **Scope and depth (choice 15).** Before the first draft, coach and user decide what is in and out of the track, and set a target level per topic on the depth pyramid. Level 4 is always offered.
+- **Stop at the target level.** The route, the teach-back, the "what if" question, the cards and the chapter follow the target level. At level 2, "why it works" is not asked, and its absence is not a gap.
+- **Black box in every route (choice 3).** It now starts every part, also before a worked example.
+- **Evidence corrected (choice 3).** The self-explanation meta-analysis [S5] does not support the teach-back: it explicitly excludes explaining to another person. It supports explaining steps and errors to yourself during learning, which route B and the explanation in route A now ask for. The hint study [S2] combined several safeguards, and its tutor prevented harm without a gain over the control group. A recent, not peer-reviewed trial found worse results with an AI tutor [S34]. Sources S2, S3 and S5 were reopened on 25 October 2026.
+- **Explaining the error (choice 3).** After the explanation in route A, the user explains with a targeted question why their own step did not work [S36].
+- **Coaching behaviour (choice 3).** One fitting question at a time instead of a fixed series, support that disappears per step, the kind of gap named with a next learning action, the check matched to the kind of reasoning, a different well-supported conclusion that can pass, labels for research, practice and design choices, and interest and choice from the first session [S37].
+- **Whose question counts, near and far transfer (choice 4).** A question the coach gives counts as help. Far transfer is a separate diagnosis that does not undo "learned" [S35].
+- **Curriculum and storage.** Sub-steps with their own status; parts are never renumbered, and a dropped part gets the status `dropped`; new parts get a prior knowledge test first; agreements about the coach's behaviour in the status file; the source of the status when it was rebuilt from a summary; per source what was read; and a research map with strength, limit and consequence.
+- **Basis.** These are design choices based on one user and one track, inspired by practice advice [S32, S33] and the sources named, not outcomes of research on the skill.
+
 ## Sources
 
 For each source, this states how it was checked when this document was written:
@@ -220,10 +261,10 @@ For each source, this states how it was checked when this document was written:
 | ID | Source | Check |
 | --- | --- | --- |
 | S1 | Sinha, T., & Kapur, M. (2021). When problem solving followed by instruction works: Evidence for productive failure. *Review of Educational Research*, 91(5), 761-798. https://doi.org/10.3102/00346543211019105 | opened |
-| S2 | Bastani, H., et al. (2025). Generative AI without guardrails can harm learning. *PNAS*. https://doi.org/10.1073/pnas.2422633122 | location confirmed; page gave an error when opened |
-| S3 | Kestin, G., Miller, K., Klales, A., Milbourne, T., & Ponti, G. (2025). AI tutoring outperforms in-class active learning: An RCT introducing a novel research-based design in an authentic educational setting. *Scientific Reports*. https://serl.fas.harvard.edu/publication/ai-tutoring-outperforms-class-active-learning-rct-introducing-novel-research-based | opened (abstract) |
+| S2 | Bastani, H., Bastani, O., Sungu, A., Ge, H., Kabakcı, Ö., & Mariman, R. (2025). Generative AI without guardrails can harm learning: Evidence from high school mathematics. *PNAS*, 122(26), e2422633122. https://doi.org/10.1073/pnas.2422633122 | journal page refused access (25 October 2026); preprint "Generative AI Can Harm Learning" opened (full text): https://nmdprojects.net/teaching_resources/bastani_generative_ai_can_harm_learning.pdf |
+| S3 | Kestin, G., Miller, K., Klales, A., Milbourne, T., & Ponti, G. (2025). AI tutoring outperforms in-class active learning: An RCT introducing a novel research-based design in an authentic educational setting. *Scientific Reports*, 15, 17458. https://doi.org/10.1038/s41598-025-97652-6 · full text: https://pmc.ncbi.nlm.nih.gov/articles/PMC12179260/ | opened (full text, 25 October 2026) |
 | S4 | Sio, U. N., & Ormerod, T. C. (2009). Does incubation enhance problem solving? A meta-analytic review. *Psychological Bulletin*. https://pubmed.ncbi.nlm.nih.gov/19210055/ | not rechecked |
-| S5 | Bisra, K., Liu, Q., Nesbit, J. C., Salimi, F., & Winne, P. H. (2018). Inducing self-explanation: A meta-analysis. *Educational Psychology Review*. https://www.Gwern.net/doc/psychology/spaced-repetition/2018-bisra.pdf | not rechecked |
+| S5 | Bisra, K., Liu, Q., Nesbit, J. C., Salimi, F., & Winne, P. H. (2018). Inducing self-explanation: A meta-analysis. *Educational Psychology Review*, 30. https://doi.org/10.1007/s10648-018-9434-x · full text: https://gwern.net/doc/psychology/spaced-repetition/2018-bisra.pdf | opened (full text, 25 October 2026) |
 | S6 | Deslauriers, L., McCarty, L. S., Miller, K., Callaghan, K., & Kestin, G. (2019). Measuring actual learning versus feeling of learning in response to being actively engaged in the classroom. *PNAS*. https://pubmed.ncbi.nlm.nih.gov/31484770/ | not rechecked; page gave an error when opened |
 | S7 | Kalyuga, S. (2007). Expertise reversal effect and its implications for learner-tailored instruction. *Educational Psychology Review*, 19, 509-539. https://doi.org/10.1007/s10648-007-9054-3 | location confirmed |
 | S8 | Wozniak, P. (1999). Effective learning: Twenty rules of formulating knowledge. https://supermemo.guru/wiki/20_rules | opened |
@@ -250,3 +291,9 @@ For each source, this states how it was checked when this document was written:
 | S29 | Soderstrom, N. C., & Bjork, R. A. (2015). Learning versus performance: An integrative review. *Perspectives on Psychological Science*, 10(2). https://doi.org/10.1177/1745691615569000 | opened (journal abstract) |
 | S30 | Gignac, G. E., & Szodorai, E. T. (2016). Effect size guidelines for individual differences researchers. *Personality and Individual Differences*. https://doi.org/10.1016/j.paid.2016.06.069 | via secondary source |
 | S31 | Anki Manual: Text Files. https://docs.ankiweb.net/importing/text-files.html | opened |
+| S32 | Galen, C. (2021). The Black Box Method: How to Learn Hard Concepts Quickly. YouTube. https://www.youtube.com/watch?v=RDzsrmMl48I | via secondary source: description and chapters checked in the research note of a learning track (24 October 2026); practice advice, not peer-reviewed |
+| S33 | Galen, C. (2022, 18 December). Focusing Your Unconscious Mind: Learn Hard Concepts Intuitively (And Forever). YouTube. https://www.youtube.com/watch?v=Dm68uFy6gus | via secondary source: transcript read in the research note of a learning track (24 October 2026); practice advice, not peer-reviewed |
+| S34 | Liu, J., Sweet, T., Chen, M. H., Engelberg, J., Masters, M. C., Clark, M., Persaud, A., Lancaster, A., Hollingsworth, J. K., & Rice, J. K. (2026). The effects of course-integrated AI tutoring on student performance and engagement: A randomized university trial. IZA Discussion Paper 18989. https://www.iza.org/publications/dp/18989/the-effects-of-course-integrated-ai-tutoring-on-student-performance-and-engagement-a-randomized-university-trial | opened (abstract, 25 October 2026); working paper, not peer-reviewed |
+| S35 | van Peppen, L. M., van Gog, T., Verkoeijen, P. P. J. L., & Alexander, P. A. (2022). Identifying obstacles to transfer of critical thinking skills. *Journal of Cognitive Psychology*, 34(2), 261-288. https://doi.org/10.1080/20445911.2021.1990302 · full text: https://pure.eur.nl/ws/files/56915413/Identifying_obstacles_to_transfer_of_critical_thinking_skills.pdf | opened (full text, abstract read; 25 October 2026) |
+| S36 | Zhang, Q., & Fiorella, L. (2024). Effects of self-explaining feedback on learning from problem-solving errors. *Contemporary Educational Psychology*, 79, 102326. https://doi.org/10.1016/j.cedpsych.2024.102326 | abstract read via an index page (https://ecrhub.org/publications/effects-self-explaining-feedback-learning-problem-solving-errors), 25 October 2026; full text not opened |
+| S37 | Okada, R. (2023; online 2021). Effects of perceived autonomy support on academic achievement and motivation among higher education students: A meta-analysis. *Japanese Psychological Research*, 65(3), 230-242. https://doi.org/10.1111/jpr.12380 | via secondary source: figures from the research note of a learning track (24 October 2026); journal page refused access when checked on 25 October 2026 |

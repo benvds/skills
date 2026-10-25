@@ -17,6 +17,8 @@ There is no fixed number. The number follows from two steps.
 
 A small part may have two pieces of knowledge, a large part ten.
 
+Follow the target level. At level 2, "why it works" gets no card: the user has not built that knowledge, and the end tasks don't need it. At level 4, a card may hold the key step of the build. A level 1 topic gets at most one card, about what it does and when you use it, in the part that uses it.
+
 **2. Filter.** A piece of knowledge gets a card only if it meets both requirements:
 - an end task or a later part needs it;
 - the user must still have it ready in a month, and cannot easily look it up when it is needed.
