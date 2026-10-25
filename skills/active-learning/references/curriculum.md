@@ -151,6 +151,7 @@ Derive the parts from the scope, the end tasks and the test.
 
 - **Shape:** two to four phases, three to six parts per phase.
 - **Part:** one concept or skill at its target level, learnable in one or two sessions of the chosen length. Larger? Split it, or check whether the target level is too high.
+- **Sub-steps:** a part that builds one skill but needs separate practice for its pieces gets sub-steps, such as 08a, 08b and 08c. Each sub-step has its own status, its own independent task, teach-back and "what if". A problem in one sub-step does not undo a sub-step already learned.
 - **Target level per part:** from step 4. It sets how far a session goes, what the teach-back asks and when the part is done (see `session.md`).
 - **Order:** by dependency. What another part needs comes first.
 - **Numbering:** parts are numbered across all phases: 01, 02, 03, ...
@@ -159,7 +160,7 @@ Derive the parts from the scope, the end tasks and the test.
   - **procedure:** carrying out a fixed series of steps correctly ("calculate a t-test")
   - **skill:** doing or making something, with practice ("assess a research report")
   - **social:** doing something with other people ("give feedback on a colleague's analysis")
-- **Phase end task:** every phase ends with a task that combines the parts of that phase, and also parts from earlier phases. Don't say which parts are needed: the user decides which approach fits. This also tests whether earlier parts can still be applied later.
+- **Phase end task:** every phase ends with a task that combines the parts of that phase, and also parts from earlier phases. Don't say which parts are needed: the user decides which approach fits. This also tests whether earlier parts can still be applied later. A task like the ones practised counts for the learning goal. If you also give a task that differs further, it is a diagnosis of far transfer: give the background knowledge it needs and record the result separately (see `session.md`, **Apply later**).
 
 ### Assessment list per end task
 
@@ -219,7 +220,7 @@ Give your own advice, with a reason. Then ask what the user chooses.
    - **Follow-up curriculum:** what is out of the track (step 4) or was moved out at the reality check, plus the logical next step after the end tasks
    - **Could add:** related subjects, and deeper levels that the goal does not need but that strengthen it, such as level 4 for a topic the user did not choose it for
 3. Ask for agreement.
-4. Save the three files (`storage.md`).
+4. Save the three files (`storage.md`). If the user made agreements about how the coach works, such as "show a worked example when I'm stuck twice", put them under **Agreements** in the status file.
 5. Deliver `00-introduction`, `01-overview` and `05-research` (`texts.md`).
 6. Start phase 1 with the black box table.
 
@@ -234,6 +235,8 @@ Give your own advice, with a reason. Then ask what the user chooses.
 - **The other way too.** If it goes faster than estimated, say so as well, and offer parts from "Almost fits" or "Could add".
 - **Out of scope:** if something interesting comes up in a session that the end tasks don't need, put it under "Could add". The track does not quietly grow.
 - **Changes:** always in consultation, always in the log with the reason, and then a new version of `01-overview`.
+- **Never renumber.** A dropped part keeps its number, with status `dropped` and the reason. A new part gets the next free number. That way card IDs and references keep their meaning.
+- **New parts.** Give new parts a short prior knowledge test first (two to four questions), then set their target level, estimate them and redo the reality check. Count the review load the user already has.
 
 ## Short track
 

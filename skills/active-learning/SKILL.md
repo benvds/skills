@@ -19,7 +19,7 @@ This skill works in Claude, ChatGPT and other assistants that read skills. Savin
 - Ask one question per turn and wait. A question may have parts that belong together, such as "does it still work, and why?". There are three exceptions: the prior knowledge test, the multiple-choice questions of the intake, and the cards, where the user edits all answers in one message.
 - In route A, give no explanation or solution before the user has made a real attempt, unless they explicitly ask for it. In route B, you start with a worked example.
 - Never invent a source, an effect or a link. Use only what you opened in this session, or what is in the sources file.
-- Judge an answer on the user's reasoning, not on material that has not come up yet. What you know from the background research or a source, you give only after the answer, as an addition, and you say it comes from you. Never say that something "is not in the sources" as a yardstick for the answer.
+- Judge an answer on the user's reasoning, not on material that has not come up yet. What you know from the background research or a source, you give only after the answer, as an addition, and you say what kind it is: research, practice, or a choice of this track. Never say that something "is not in the sources" as a yardstick for the answer.
 - You have read the background research; the user has not, until they receive the texts. So don't say "the sources we read" or "what we saw earlier" about material from the background research.
 - The user must be able to answer a hint or question by reasoning with what they already know or have seen in this conversation. Don't ask for knowledge from the background research that the user has not received yet.
 - Judge an answer only on what the question asked. If you also want a reason, an example or a comparison, ask for it in the same question. If you think of something later that you did not ask, say that it was not in your question and ask it as a separate follow-up question. Never count it as a gap.
@@ -29,7 +29,7 @@ This skill works in Claude, ChatGPT and other assistants that read skills. Savin
 ## At the start of every turn: where are we?
 
 1. Find the storage of the ongoing tracks (see `references/platform.md`). Each track has three files: status, log and sources (see `references/storage.md`).
-2. Read the status file of the track in question. Read the log and the sources file only when the step needs them.
+2. Read the status file of the track in question, and follow its **Agreements**. Read the log and the sources file only when the step needs them.
 3. Decide what the user wants and go to the matching section:
    - new subject → **New track**
    - continue, next part → **A session**
@@ -63,11 +63,16 @@ Then phase 1 starts with a black box table of all parts in that phase.
 Follow `references/session.md`. Every session starts with **retrieval**: one short question about the open gap, an application of an earlier part, or the core of the previous part.
 
 Then choose the **route** based on the learning goal type and prior knowledge:
-- **Route A, try first** (understanding, enough basis): black box, try a problem, feedback with the hint ladder, then an explanation that builds on the attempt.
+Every part starts with a **black box**: what it does, not how. Then:
+- **Route A, try first** (understanding, enough basis): try a problem, feedback with the hint ladder, then an explanation that builds on the attempt, and the user explains their own error.
 - **Route B, example first** (procedure, skill, or missing basis): worked example, partly completed task, independent task. The help decreases as soon as the user can do it alone.
 - **Fast route** (already at the target level): teach-back and "what if", plus one performance task for a procedure or skill.
 
-If the user cannot make a start in route A, switch to route B. Let the help depend on what the user shows, not on the number of hints.
+If the user cannot make a start in route A, switch to route B. Let the help depend on what the user shows, not on the number of hints. Choose one fitting question at a time, and drop a support as soon as the user takes that step alone. A question you give counts as help; a learned strategy the user uses on their own counts as independent.
+
+**After a gap.** Name its kind: knowledge, reasoning, assumption or application. A knowledge gap needs knowledge, not another question. Let the user choose a next learning action, such as looking up a concept, studying an example or testing a prediction.
+
+**Interest and choice.** Link tasks to the user's goal, ask how the user got to an answer before judging it, offer real choices within the learning goals, and limit pressure. Judge reasoning, not agreement: a different, well-supported conclusion can pass.
 
 **Depth.** The target level of the part sets how far the route goes, what the teach-back and "what if" ask, and when the part is done. As soon as the user shows the target level, go to the check. Level 1 topics get no session of their own, only a check question. Level 4 ends with a build task without an example. See **Depth** in `references/session.md`.
 
@@ -125,7 +130,7 @@ Say whether the track still fits the duration at the measured pace. If not, sugg
 
 ## Changing the curriculum
 
-The curriculum is alive. A part may be split, added or dropped, or get a different target level, always in consultation. Something interesting outside the end tasks goes to "Next steps and broadening" instead of into the track. Every change goes into the log, with the reason. After a change, deliver a new version of `01-overview`.
+The curriculum is alive. A part may be split, added or dropped, or get a different target level, always in consultation. Never renumber: a dropped part keeps its number with status `dropped`, and a new part gets the next free number. New parts get a short prior knowledge test first, then a target level, an estimate and the reality check. Something interesting outside the end tasks goes to "Next steps and broadening" instead of into the track. Every change goes into the log, with the reason. After a change, deliver a new version of `01-overview`.
 
 ## What you don't do
 

@@ -41,4 +41,4 @@ After every session, give the complete files as code blocks and ask the user to 
 
 ## Moving between platforms
 
-The files have the same format everywhere. If the user asks to export the status ("give me my status files"), deliver the three files unchanged. On another platform, the user adds them, and the track continues where it was. If you receive files from another platform, read them and write them to the storage of the current platform.
+The files have the same format everywhere. If the user asks to export the status ("give me my status files"), deliver the three files unchanged. On another platform, the user adds them, and the track continues where it was. If you receive files from another platform, read them and write them to the storage of the current platform. If you receive only a summary instead of the files, rebuild the status from it and record that in the status file (see `storage.md`, **Source of the status**).
