@@ -4,7 +4,7 @@ Everything that must survive a conversation lives in three files per track. The 
 
 | File | Contents | Read |
 | --- | --- | --- |
-| `learning-[slug].md` | track, curriculum, status, pace, texts, next steps | every session |
+| `learning-[slug].md` | track, scope and depth, curriculum, status, pace, texts, next steps | every session |
 | `learning-[slug]-log.md` | complete log of all sessions | for chapters, progress, adjusting, retrieval from another conversation |
 | `learning-[slug]-sources.md` | research map, search log, source list | for texts, new research, checks |
 
@@ -21,6 +21,7 @@ Earlier versions of this skill used Dutch file names, keys and statuses. Read th
 | `learning-[slug]-sources.md` | `leren-[slug]-bronnen.md` |
 | `open`, `in-progress`, `learned` | `open`, `bezig`, `aangeleerd` |
 | `apply later` / `applied later` | `later toepassen` / `later toegepast` |
+| `level 1 overview`, `level 2 use`, `level 3 inside`, `level 4 build` | `niveau 1 overzicht`, `niveau 2 gebruiken`, `niveau 3 vanbinnen`, `niveau 4 zelf opbouwen` |
 
 ## Format, on every platform
 
@@ -56,6 +57,7 @@ aliases: [learning statistics]
 ---
 
 ## Track
+- [stated] Goal: judge for myself whether the conclusion of a report holds, without relying on the summary
 - [stated] End tasks: read a research report and assess its conclusion; ...
 - [stated] Anchor source: none
 - [stated] Duration: 8 weeks, 2026-10-17 to 2026-12-12; 2-3 sessions per week of 30 min, Tue and Thu 20:00
@@ -63,12 +65,18 @@ aliases: [learning statistics]
 - [stated] Cards: Active Retrieval; deck "Statistics" 📊
 - [stated] Pace: correction factor not measured yet (after 3 parts)
 
+## Scope
+- [stated] Depth: 01 level 3, you must see for yourself why a sample can be skewed; 02 level 2, using it is enough; 03 level 2, reading it correctly is enough; 04 level 2, reading it correctly is enough
+- [stated] Level 1, no part of its own: t-test (phase 1 table)
+- [stated] Level 4 offered: simulating a p-value; not chosen
+- [stated] Out: calculating tests yourself, no end task needs it; regression, outside the end tasks
+
 ## Curriculum
 ### Phase 1: What a number does and does not tell you
-- [stated] 01 Sample and population · understanding · route A: learned 2026-10-17 in 1 session (estimate 1-2); independent yes; apply later open; cards statistics-01-01 to 05
-- [stated] 02 Spread · procedure · fast route: learned 2026-10-19 in 0.5 session (estimate 0.5-1); independent yes; applied later 2026-10-28; cards statistics-02-01 to 03
-- [stated] 03 p-value · understanding · route A: in-progress, 2 sessions so far (estimate 1-2); independent no; gap: confuses p with the probability that H0 is true
-- [stated] 04 Confidence interval · understanding: open; estimate 1-2
+- [stated] 01 Sample and population · understanding · level 3 inside · route A: learned 2026-10-17 in 1 session (estimate 1-2); independent yes; apply later open; cards statistics-01-01 to 05
+- [stated] 02 Spread · procedure · level 2 use · fast route: learned 2026-10-19 in 0.5 session (estimate 0.5-1); independent yes; applied later 2026-10-28; cards statistics-02-01 to 03
+- [stated] 03 p-value · understanding · level 2 use · route A: in-progress, 2 sessions so far (estimate 1-2); independent no; gap: confuses p with the probability that H0 is true
+- [stated] 04 Confidence interval · understanding · level 2 use: open; estimate 1-2
 - [stated] End task phase 1: assess report X; open; estimate 1
 - [stated] Assessment list end task phase 1: conclusion named; p-value interpreted correctly; essential error: p as the probability of H0; help: no hints
 
@@ -76,7 +84,7 @@ aliases: [learning statistics]
 - [stated] 00-introduction, 01-overview, 05-research delivered 2026-10-17
 
 ## Next steps and broadening
-- [stated] Follow-up curriculum: regression, moved out at the reality check
+- [stated] Follow-up curriculum: regression and calculating tests yourself, out of the track
 - [stated] Could add: Bayesian statistics
 ```
 
@@ -84,7 +92,11 @@ aliases: [learning statistics]
 
 **Cards:** the spaced repetition app and the deck name. For Anki, without an emoji: `- [stated] Cards: Anki; deck "Statistics"`.
 
-**Per part:** learning goal type, route, status, sessions, estimate, independent yes/no, "apply later" (open, or the date of a successful application), open gap, card IDs.
+**Scope:** the reason for each target level, the level 1 topics without a part of their own, which level 4 was offered and whether it was chosen, and what is out of the track, with the reason. Keep each reason to a few words: it is needed when a level is reconsidered later.
+
+**Existing track without levels:** at the next session, propose a target level for the open and in-progress parts, in one question, and add the levels and the Scope section. Learned parts keep their status.
+
+**Per part:** learning goal type, target level, route, status, sessions, estimate, independent yes/no, "apply later" (open, or the date of a successful application), open gap, card IDs.
 
 **Statuses:** `open`, `in-progress`, `learned`. With `in-progress` come the sessions so far and the open gap, if there is one. With `learned` come the date, the actual number of sessions and the card IDs. The estimate stays, so you can measure the difference. "Learned" means the first learning phase is done; "applied later" shows whether it stuck.
 
@@ -104,6 +116,7 @@ aliases: [statistics log]
 - [stated] 2026-10-17 · 01 · session 1 · fast route, learned · teach-back: "a sample tells you something about the population if ..." · cards made, 5
 - [stated] 2026-10-19 · 03 · session 1 · route A · solved at hint level 3 · independent task failed · gap: confuses p with the probability that H0 is true
 - [stated] 2026-10-21 · change · 04 split into 04a and 04b; reason: too large for one session
+- [stated] 2026-10-24 · change · 03 target level 3 → 2; reason: the end task only needs reading p-values correctly
 - [stated] 2026-10-28 · pace · after 3 parts: 4.5 sessions measured against 4 estimated (midpoint); correction factor 1.1
 ```
 

@@ -2,7 +2,7 @@
 
 This document explains why the skill works the way it does. For each choice, it states what was decided, why, what it rests on, and which alternative was rejected. Source references appear as [S1], [S2] and so on. The source list at the bottom states for each source how it was checked.
 
-Written 17 October 2026. Revised the same day after an external review of the content and after first use; see "Changes after review" and "Changes after first use" at the bottom. Prepared for publication on 21 October 2026; see "Changes for publication".
+Written 17 October 2026. Revised the same day after an external review of the content and after first use; see "Changes after review" and "Changes after first use" at the bottom. Prepared for publication on 21 October 2026; see "Changes for publication". Revised on 25 October 2026 after a second track; see "Changes after second use".
 
 ## Goal
 
@@ -97,7 +97,7 @@ The fast route prevents you from going through parts you already master in full 
 
 ## Choice 9: The curriculum
 
-**Decision.** Intake with end tasks and time, background research, prior knowledge test, first draft with a learning goal type per part, a reality check together, a short assessment list per end task, and a next steps section. Phase end tasks also combine parts from earlier phases, without saying which are needed.
+**Decision.** Intake with a goal, end tasks and time, background research, prior knowledge test, scope and depth per topic (see choice 15), first draft with a learning goal type and a target level per part, a reality check together, a short assessment list per end task, and a next steps section. Phase end tasks also combine parts from earlier phases, without saying which are needed.
 
 **Why and rationale.**
 - **Start at the end.** First decide what you want to be able to do, then how you show it, and only then the lessons. This is called backward design [S15]. A level label such as "beginner" says nothing about what you want to achieve.
@@ -161,6 +161,26 @@ The fast route prevents you from going through parts you already master in full 
 
 **Rejected.** Refusing short tracks. Then the skill would not help with a common learning question, while its core works there too.
 
+## Choice 15: A depth pyramid per topic
+
+**Decision.** Before any parts are made, coach and user set the scope together: the goal, what is in the track and what is out, and a target level for each topic on a pyramid of four levels:
+1. **Overview:** what it does, what you use it for, when not
+2. **Use:** apply it correctly in a real task
+3. **Inside:** why it works, so you can predict, find errors and adapt
+4. **Build:** derive or rebuild it yourself, or design a variant
+
+Each topic gets the lowest level at which the end tasks succeed. Every level deeper needs a concrete reason, which the coach tests with the question "what goes wrong in your end task if you can only do the previous level?" Level 4 is never the default, but the coach always offers it for one or two topics. A part is done when it reaches its target level. The route, the teach-back, the "what if" question, the cards and the chapter follow that level. Level 1 topics get no session of their own.
+
+**Why.**
+- **Time goes to the goal.** In a second track, some concepts took a long time before they counted as learned, while the user could already use them. The bar for "learned" was the same for every part: explain why it works. For a part that the end task only needs at level 2, that costs sessions without bringing the goal closer. A target level per part makes the bar explicit, and lets the coach stop as soon as it is reached.
+- **Backward design includes depth.** Starting from what you want to be able to do and how you will show it [S15] also means deciding how deep you must go for that. A level per topic makes that decision visible, so the user can disagree with it.
+- **Practice source.** Colin Galen describes a "black box method": first learn to use a complex tool or concept for its purpose, before you know how it works inside [S32]. In a later video, he describes deepening in layers: understand the purpose, look at details in their context, practise, explain and try variations, and try to work things out yourself. He calls that slow, and suitable mainly for hard, important concepts [S33]. Both are practice advice, not comparative experiments. The four levels are this skill's translation: level 1 is the black box, levels 3 and 4 are his deepening.
+- **Deeper by choice.** Some topics the user wants to master deeply, to build, teach or research it. Level 4 makes that possible. Because it costs the most time, it is a choice the user makes knowingly, counted in the reality check.
+
+**What the research does not show.** No direct study was found of Galen's method or of a depth pyramid like this one. The research note of a learning track (24 October 2026) reached the same conclusion. The four levels, their order and the test question are design choices. Galen's claims about remembering things forever are not adopted.
+
+**Rejected.** One depth for all parts. That was the old bar, and it costs time without bringing the goal closer. Also rejected: leaving depth to the coach's judgement during the sessions. Then it stays implicit, and the user cannot choose.
+
 ## Known limitations
 
 - **The assistant judges your teach-back.** That judgement can be wrong. That is why you confirm every "learned".
@@ -169,7 +189,8 @@ The fast route prevents you from going through parts you already master in full 
 - **Working at the same time.** If you work on the same track on two devices at once in Claude, the assistant merges changes when there is a version conflict. Check the status file if something looks odd.
 - **No `cloze` cards.** Only `basic`.
 - **Without code execution, no zip or EPUB.** Cards then come as separate code blocks.
-- **Rules of thumb.** The shape of the curriculum (two to four phases, three to six parts; one phase with two to four parts in a short track), the signal at ten cards and the limit at hint level 3 for an independent task are design choices, not derived from research.
+- **Rules of thumb.** The shape of the curriculum (two to four phases, three to six parts; one phase with two to four parts in a short track), the signal at ten cards, the limit at hint level 3 for an independent task and the four depth levels are design choices, not derived from research.
+- **The coach proposes the depth.** The proposal can be too shallow or too deep. That is why the user confirms the scope, and why a level can change during the track.
 - **Audience.** The skill assumes an adult learner who masters the language of instruction well. Age, language proficiency and extra support needs are not explicitly weighed. Children or beginning language learners need an adapted version, partly because instruction first came out better for young learners [S1].
 - **Social learning goals.** The skill can give a practice task in a real situation and debrief it, but cannot practise with real people itself.
 
@@ -208,6 +229,14 @@ For publication, the skill was separated from one personal setup:
 - **English instructions.** The instructions are in English; the skill speaks the user's language. File names, keys and statuses are English. Tracks started with the Dutch version keep their Dutch names, and the skill reads both (see `references/storage.md`).
 - **Gender-neutral.** The instructions refer to the user as "the user" or "they".
 - **Short track.** A track can last from a few hours to several months (choice 14).
+
+## Changes after second use
+
+A second track, in which the user also reviewed the skill itself, led to these changes in `references/curriculum.md` (new step 4 "Scope and depth"), `references/session.md` (new section "Depth"), `SKILL.md`, `references/cards.md`, `references/storage.md` and `references/texts.md`:
+- **Goal in the intake.** The intake now first asks why the user wants to learn the subject. The introduction already needed this, but the intake did not ask for it.
+- **Scope and depth (choice 15).** Before the first draft, coach and user decide what is in and out of the track, and set a target level per topic on the depth pyramid. Level 4 is always offered.
+- **Stop at the target level.** The route, the teach-back, the "what if" question, the cards and the chapter follow the target level. At level 2, "why it works" is not asked, and its absence is not a gap.
+- **Basis.** These are design choices based on one user and one track, inspired by practice advice [S32, S33], not outcomes of research.
 
 ## Sources
 
@@ -250,3 +279,5 @@ For each source, this states how it was checked when this document was written:
 | S29 | Soderstrom, N. C., & Bjork, R. A. (2015). Learning versus performance: An integrative review. *Perspectives on Psychological Science*, 10(2). https://doi.org/10.1177/1745691615569000 | opened (journal abstract) |
 | S30 | Gignac, G. E., & Szodorai, E. T. (2016). Effect size guidelines for individual differences researchers. *Personality and Individual Differences*. https://doi.org/10.1016/j.paid.2016.06.069 | via secondary source |
 | S31 | Anki Manual: Text Files. https://docs.ankiweb.net/importing/text-files.html | opened |
+| S32 | Galen, C. (2021). The Black Box Method: How to Learn Hard Concepts Quickly. YouTube. https://www.youtube.com/watch?v=RDzsrmMl48I | via secondary source: description and chapters checked in the research note of a learning track (24 October 2026); practice advice, not peer-reviewed |
+| S33 | Galen, C. (2022, 18 December). Focusing Your Unconscious Mind: Learn Hard Concepts Intuitively (And Forever). YouTube. https://www.youtube.com/watch?v=Dm68uFy6gus | via secondary source: transcript read in the research note of a learning track (24 October 2026); practice advice, not peer-reviewed |

@@ -43,8 +43,9 @@ Then:
 ## The introduction
 
 About 300 to 500 words:
-- why the user is learning this subject (from the intake, in the user's own words)
+- why the user is learning this subject (the goal from the intake, in the user's own words)
 - the end tasks
+- the scope: what is in the track and how deep, and what is out
 - the structure in phases, in one paragraph
 - how the track worked: black box, trying first, teach-back, cards
 
@@ -52,7 +53,7 @@ At the end of the track, rewrite the introduction so it matches how things reall
 
 ## The overview
 
-One table per phase: number, part, what it does, status. Below it the end task of the phase. At the top: duration, weekly effort (or total time for a short track), start and end date.
+One table per phase: number, part, target level, what it does, status. Below it the end task of the phase. After the tables: the level 1 topics without a part of their own, and what is out of the track. At the top: duration, weekly effort (or total time for a short track), start and end date.
 
 ## The research file
 
@@ -65,7 +66,7 @@ A chapter is reference material that a reader can check. The evidence comes from
 Write it at the end of a phase, after the phase end task (if there is one). Read the log (core wording, hint levels, gaps) and the sources file first.
 
 **Preparation, before you write**
-1. For each part, list the claims the chapter will make: what it does, why it works, when it does not work.
+1. For each part, list the claims the chapter will make: what it does, when it does not work, and, at level 3 or 4, why it works. The chapter goes as deep as the target level. Whatever lies deeper goes under "Further reading".
 2. For each claim, search for a source and open it. Start with the primary source that the research map or the design document mentions. A figure or conclusion that you only know from the design document or from a summary does not count as support.
 3. Add each new source to the sources file and each search to the search log first. Only then use the source in the text.
 4. If you cannot open a source for a claim, choose: leave the claim out, write it as a "design choice of the skill" (with that label, supported by the design document), or put it under "What is still open". A source you could not open may at most appear under "Further reading", with the sentence "mentioned in [Bnn], not opened".
@@ -92,7 +93,7 @@ Write it at the end of a phase, after the phase end task (if there is one). Read
 - Sections 2 and 3 together are at least as long as sections 4, 5 and 6 together. Otherwise the chapter reads as the user's story with sources attached, and that is not the intention.
 - A reader who does not know the user can trace every claim to a source.
 
-**Length.** About 400 to 700 words per part.
+**Length.** About 400 to 700 words per part; for a part at level 2, the shorter end.
 
 Deliver the chapter as a downloadable file (see `platform.md`) and put it in the status file under "Texts".
 

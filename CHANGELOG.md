@@ -2,6 +2,12 @@
 
 Every commit to `main` reaches users on their next sync, so each entry is dated rather than versioned.
 
+## 2026-10-25
+
+### Changed
+
+- `active-learning`: the curriculum now has a step for scope and depth. The intake first asks for your goal. Together you decide what is in and out of the track, and set a level per topic on a pyramid of four: overview, use, inside, build it yourself. Each topic gets the lowest level your end tasks need; level 4 is always offered. Sessions, teach-backs, cards and chapters stop at that level, so a concept you only need to use no longer takes sessions to explain.
+
 ## 2026-10-24
 
 ### Added
