@@ -2,6 +2,12 @@
 
 Every commit to `main` reaches users on their next sync, so each entry is dated rather than versioned.
 
+## 2026-11-18
+
+### Added
+
+- `week-reflection`: a short, guided reflection on one project decision from your week. You reconstruct the choice, the alternatives and what you expected, then compare that with what you actually saw. The coach asks one question per turn, never picks the next step for you, and closes after you choose it. The public example is fictional.
+
 ## 2026-10-25
 
 ### Changed
